@@ -1,0 +1,78 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+}
+.gitlab-container {
+  /* width: 200px;
+  height: 200px;
+  background-color: red; */
+  position: relative;
+}
+.gitlab-center {
+  border-top: 200px solid #ff4125;
+  border-left: 170px solid transparent;
+  border-right: 170px solid transparent;
+  opacity: 0.7;
+}
+/*  */
+.gitlb-left {
+  border-bottom: 121px solid #ffa300;
+  border-left: 189px solid transparent;
+  border-right: 189px solid transparent;
+  transform: rotate(90deg);
+  position: absolute;
+  left: -42%;
+  top: -16%;
+  -webkit-transform: rotate(252deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+.gitlb-left::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 62px;
+  border-bottom: 178px solid #ff4125;
+  border-left: 48px solid transparent;
+  border-right: 48px solid transparent;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(106deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+.gitlab-right {
+  border-bottom: 121px solid #ffa300;
+  border-left: 189px solid transparent;
+  border-right: 189px solid transparent;
+  transform: rotate(90deg);
+  position: absolute;
+  right: -43%;
+  bottom: 52%;
+  -webkit-transform: rotate(110deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  z-index: -1;
+}
+
+.gitlab-right::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -192px;
+  right: 69px;
+  border-bottom: 180px solid #ff4125;
+  border-left: 48px solid transparent;
+  border-right: 48px solid transparent;
+  transform: rotate(289deg);
+  -webkit-transform: rotate(252deg);
+  -moz-transform: rotate(289deg);
+  -ms-transform: rotate(289deg);
+  -o-transform: rotate(289deg);
+}
